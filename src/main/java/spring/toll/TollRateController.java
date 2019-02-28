@@ -19,16 +19,16 @@ public class TollRateController {
 		
 		switch(stationId) {
 		case 1:
-			tr = new TollRate(stationId, new BigDecimal("0.55"), Instant.now().toString());
+			tr = new TollRate(stationId, new BigDecimal("5.55"), Instant.now().toString());
 			break;
 		case 2:
-			tr = new TollRate(stationId, new BigDecimal("1.05"), Instant.now().toString());
+			tr = new TollRate(stationId, new BigDecimal("5.05"), Instant.now().toString());
 			break;
 		case 3:
-			tr = new TollRate(stationId, new BigDecimal("0.60"), Instant.now().toString());
+			tr = new TollRate(stationId, new BigDecimal("5.60"), Instant.now().toString());
 			break;
 		default:
-			tr = new TollRate(stationId, new BigDecimal("1.00"), Instant.now().toString());
+			tr = new TollRate(stationId, new BigDecimal("5.00"), Instant.now().toString());
 			break;
 		}
 		
