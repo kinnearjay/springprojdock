@@ -65,15 +65,7 @@
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.0.2</version>
-            <configuration>
-        <archive>
-          <manifest>
-            <addClasspath>true</addClasspath>
-            
-            <mainClass>spring.toll.EurekaTollrateServiceApplication</mainClass>
-          </manifest>
-        </archive>
-      </configuration>
+          
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
@@ -92,6 +84,11 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+        <plugin>
+		 <groupId>org.springframework.boot</groupId>
+ 		<artifactId>spring-boot-maven-plugin</artifactId>
+ </plugin>
+        
       </plugins>
     </pluginManagement>
   </build>
