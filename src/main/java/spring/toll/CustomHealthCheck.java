@@ -17,7 +17,7 @@ public class CustomHealthCheck implements HealthIndicator {
 		// this will temporarily allow take the service down and it will be taken down by eureka server
 		// launch one application with all this enabled to that it would fail for a while
 		// and another without so that it would work without issues
-		if(errorcode > 4 && errorcode < 10) {
+		if(errorcode > 2 && errorcode < 10) {
 			errorcode++;
 			return Health.down().withDetail("Custom Error Code", errorcode).build();
 		}
